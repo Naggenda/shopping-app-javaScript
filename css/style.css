@@ -19,8 +19,16 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.toggle{
+    display: none;
+    width: 10%;
+}
 
-.navbar ul {
+.nav-links ul {
+    display: flex;
+    padding: 0px;
+}
+.shopping-side ul {
     display: flex;
     padding: 0px;
 }
@@ -53,16 +61,19 @@ body {
 
 .image-area {
     width: 40%;
+    position: relative;
 }
 
 .image-area .parent-img {
     width: 100%;
     border-radius: 8px;
+    position: absolute;
 }
 
 .image-area .sub-images {
     display: flex;
     justify-content: space-between;
+    padding: 480px 0 0;
 }
 
 .image-area .sub-images img {
@@ -104,7 +115,7 @@ p {
     color: gray;
 }
 
-.btn-add{
+.btn-add {
     display: flex;
     justify-content: space-around;
     width: 120px;
@@ -114,14 +125,14 @@ p {
     background-color: hsl(223, 64%, 98%);
 }
 
-.btn-add button{
+.btn-add button {
     border: none;
     background: none;
     color: hsl(26, 100%, 55%);
     font-weight: 900;
 }
 
-.add-button{
+.add-button {
     cursor: pointer;
     padding: 0 20px;
     border: none;
@@ -131,25 +142,25 @@ p {
     height: 35px;
 }
 
-.add-button:hover{
+.add-button:hover {
     background: hsl(25, 100%, 94%);
     color: black;
 }
 
-.price-tag{
+.price-tag {
     padding: 15px 0;
     display: flex;
     align-items: center;
 }
 
-.price-tag span{
+.price-tag span {
     background: hsl(25, 100%, 94%);
     padding: 5px;
     border-radius: 8px;
     margin-left: 10px;
 }
 
-#my-cart{
+#my-cart {
     border: 1px solid;
     top: 70px;
     width: 25%;
@@ -161,4 +172,62 @@ p {
     right: 41px;
     z-index: 1;
     background: white;
+}
+
+/* media sizes */
+
+@media screen and (max-width: 425px) {
+    .nav-links {
+        display: none;
+        background: hsl(0, 0%, 100%);
+        position: absolute;
+        width: 60%;
+        top: 80px;
+        z-index: 1;
+        height: 100vh;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .navbar ul li {
+        padding: 0px 10px;
+    }
+    .nav-links ul{
+        display: block;
+    }
+
+    .navbar ul li a {
+        color: hsl(0, 0%, 0%);
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .image-area {
+        width: 100%;
+    }
+
+    .image-area .sub-images {
+        padding: 410px 0 0;
+    }
+
+    #my-cart {
+        width: 90%;
+        right: 15px;
+    }
+
+    .image-description {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
 }

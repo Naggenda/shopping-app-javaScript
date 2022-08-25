@@ -27,11 +27,15 @@
 <body>
   <div class="container">
     <nav class="navbar">
+      <div class="toggle">
+        <img src="./images/toggle.png" alt="nav" onclick="toggle()" style="width: 100%">
+      </div>
       <div class="nav-logo">
         <a href="#"><img src="./images/logo.svg" alt="" /></a>
       </div>
-      <div class="nav-links">
-        <ul>
+
+      <div class="nav-links" id="nav-links">
+        <ul class="nav-items">
           <li><a href="#">Collections</a></li>
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
@@ -41,18 +45,19 @@
       </div>
       <div class="shopping-side">
         <ul>
-          <li  onclick="cartItem()">
-              <img src="./images/icon-cart.svg" alt="" />
-              <sup id="count-el">0</sup>
+          <li onclick="cartItem()">
+            <img src="./images/icon-cart.svg" alt="" />
+            <sup id="count-el">0</sup>
           </li>
           <li>
             <a href="#"><img src="./images/image-avatar.png" alt="" /></a>
           </li>
         </ul>
       </div>
+
     </nav>
 
-    
+
 
     <div class="line">
       <hr />
@@ -69,7 +74,7 @@
           <img src="./images/image-product-1-thumbnail.jpg" alt="" onclick="myfunction()" />
           <img src="./images/image-product-2-thumbnail.jpg" alt="" onclick="myfunction1()" />
           <img src="./images/image-product-3-thumbnail.jpg" alt="" onclick="myfunction2()" />
-          <img src="./images/image-product-4-thumbnail.jpg" alt="" onclick="myfunction4()" />
+          <img src="./images/image-product-4-thumbnail.jpg" alt="" onclick="myfunction3()" />
         </div>
       </div>
 
@@ -82,10 +87,10 @@
           the weather can offer.
         </p>
         <div class="price-tag">
-          $<h4  id="price">125</h4>
-          <span><small>50%</small></span>
+          $<h4 id="price">125</h4>
+          <span><small>50% off</small></span>
         </div>
-        <small>$500.00</small>
+        <small><s>$500.00</s></small>
         <div style="display: flex">
           <div class="btn-add">
             <button id="decrement" onclick="decrement()">-</button>
@@ -106,8 +111,8 @@
 
   <div class="attribution">
     Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
-      Name Here</a>.
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="https://github.com/Naggenda">Naggenda Joshua</a>.
   </div>
 
   <script src="./js/script.js"></script>
