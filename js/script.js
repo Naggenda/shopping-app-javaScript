@@ -1,5 +1,10 @@
 let count = 0
 let totalPrice;
+let img = document.getElementById('img');
+let img1 = document.getElementById('img1'); 
+let img2 = document.getElementById('img2'); 
+let img3 = document.getElementById('img3'); 
+
 let navLinks = document.getElementById('nav-links');
 let countVl = document.getElementById('count-vl');
 let countEl = document.getElementById('count-el');
@@ -82,7 +87,6 @@ function myfunction2(){
 
 function myfunction(){
     let img = document.getElementById('img');
-    // var i = document.getElementById('img1');
     if(img.style.display=='none'){
         img.style.display='block';
     }

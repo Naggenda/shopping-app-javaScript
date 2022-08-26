@@ -86,6 +86,10 @@ body {
     padding-right: 25px;
 }
 
+#img{
+    display: block;
+}
+
 #img1 {
     display: none;
 }
@@ -174,6 +178,24 @@ p {
     background: white;
 }
 
+.scroll-btn{
+    border-radius: 50%;
+    position: absolute;
+    /* right: -280px; */
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: white;
+    background: tomato;
+}
+
+.slider-btns{
+    display: none;
+    padding: 0 40px;
+    position: absolute;
+    top: 350px;
+}
+
 /* media sizes */
 
 @media screen and (max-width: 425px) {
@@ -214,10 +236,6 @@ p {
         width: 100%;
     }
 
-    .image-area .sub-images {
-        padding: 410px 0 0;
-    }
-
     #my-cart {
         width: 90%;
         right: 15px;
@@ -229,5 +247,13 @@ p {
 
     h2 {
         font-size: x-large;
+    }
+
+    .image-area .sub-images img{
+        display: none;
+    }
+
+    .slider-btns{
+        display: block;
     }
 }
