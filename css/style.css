@@ -181,7 +181,6 @@ p {
 .scroll-btn{
     border-radius: 50%;
     position: absolute;
-    /* right: -280px; */
     width: 30px;
     height: 30px;
     border: none;
@@ -225,6 +224,7 @@ p {
     }
 
     .main {
+        padding: 20px 0;
         flex-direction: column;
     }
 
